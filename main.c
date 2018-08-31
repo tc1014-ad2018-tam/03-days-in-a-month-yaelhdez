@@ -1,19 +1,22 @@
+//Carlos Yael Hernandez Alcala
+//A01412016
+//a01412016@itesm.mx
+
 #include <stdio.h>
-
 int main() {
-    int month, year;
+    int month, year;  //DECLARATION OF VARIABLES
     printf("give me the number of the month \n");
-    scanf("%d",&month);
+    scanf("%d",&month); //Variable "Month" request
     printf("give me the year \n");
-    scanf("%d",&year);
+    scanf("%d",&year); //Variable "year" request
 
-
+//this Switch evaluates the variable "month"
     switch (month){
         case 1:
             printf("The month of January has 31 Days");
             break;
         case 2:
-            if (year % 4 == 0 & year % 100 != 0 || year % 400 == 0){
+            if (year % 4 == 0 & year % 100 != 0 || year % 400 == 0){ //this if evaluates whether the year is a leap-year
 
                 printf("The month of February has 29 Days");
             }
@@ -52,7 +55,7 @@ int main() {
             printf("The month of December has 31 years");
             break;
         default:
-            printf("That month doesn't exist");
+            printf("That month doesn't exist"); //numbers that doesn't exist in the numeration of the months
             break;
     }
     return 0;
